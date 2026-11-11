@@ -1,0 +1,14 @@
+{
+  "Name": "HEPAVISION Orthanc (local development)",
+  "HttpServerEnabled": true,
+  "HttpPort": 8042,
+  "DicomServerEnabled": true,
+  "DicomPort": 4242,
+  "RemoteAccessAllowed": false,
+  "AuthenticationEnabled": true,
+  "RegisteredUsers": {
+    "hepavision": "CHANGE_THIS_PASSWORD"
+  },
+  "DicomAet": "HEPAVISION",
+  "DicomCheckCalledAet": false
+}

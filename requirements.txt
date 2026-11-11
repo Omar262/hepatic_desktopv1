@@ -1,0 +1,7 @@
+PySide6>=6.6,<7
+pydicom>=2.4,<4
+numpy>=1.24,<3
+Pillow>=10,<12
+scikit-image>=0.22,<1
+trimesh>=4,<5
+onnxruntime>=1.17,<2

@@ -1,0 +1,22 @@
+بناء HEPATIC.exe بدون تثبيت Python على جهازك
+
+هذه الطريقة تستخدم GitHub Actions لبناء البرنامج على جهاز Windows سحابي.
+لا تحتاج تثبيت Python محلياً، لكن تحتاج حساب GitHub واتصال إنترنت.
+
+1) أنشئ حساباً أو سجّل الدخول إلى https://github.com
+2) أنشئ Repository جديداً باسم HEPATIC-Desktop.
+3) اختر Add file ثم Upload files.
+4) افتح مجلد HEPATIC_Desktop وارفع كل محتوياته (بما فيها مجلد .github).
+   إذا لم يظهر .github على جهازك، فعّل إظهار الملفات المخفية أو ارفع الملفات من ZIP عبر GitHub.
+5) اضغط Commit changes.
+6) افتح تبويب Actions في المستودع.
+7) اختر Build HEPATIC for Windows ثم Run workflow.
+8) انتظر اكتمال البناء بنجاح.
+9) افتح نتيجة التشغيل (workflow run)، ثم حمّل Artifact باسم HEPATIC-Windows-x64.
+10) فك ضغط Artifact، ثم شغّل HEPATIC.exe داخل مجلد HEPATIC.
+
+ملاحظات:
+- لا تحتاج Python على جهاز التشغيل النهائي.
+- احتفظ بمجلد HEPATIC كاملاً؛ لا تنقل ملف EXE وحده.
+- هذه عملية بناء للنسخة البرمجية الحالية فقط؛ لا تعني أن كل وحدات AI الطبية أصبحت مدربة أو معتمدة سريرياً.
+- إذا فشل البناء، أرسل صورة سجل Actions أو نص الخطأ.
